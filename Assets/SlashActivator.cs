@@ -40,4 +40,12 @@ public class SlashActivator : MonoBehaviour
         }
         slashLight.enabled = true;
     }
+
+    public void ReceiveMessage(MessageType argument)
+    {
+        if (argument == MessageType.TYPE3)
+        {
+            Debug.Log(this.name + " Received the message!");
+        }
+    }
 }
